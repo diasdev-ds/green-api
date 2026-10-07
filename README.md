@@ -5,13 +5,36 @@
 
 **Стек:** React 18 + TypeScript + Vite. Без UI-библиотек и бэкенда: приложение обращается к GREEN-API напрямую из браузера.
 
-## Запуск
+## Локальный запуск
+
+**Нужно:** [Node.js](https://nodejs.org/) 18 или новее и Git.
+
+1. Склонируйте репозиторий и установите зависимости:
+
+   ```bash
+   git clone https://github.com/diasdev-ds/green-api.git
+   cd green-api
+   npm install
+   ```
+
+2. Запустите dev-сервер:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Откройте в браузере http://localhost:5173.
+
+4. Войдите с данными инстанса GREEN-API (см. «Как пользоваться» ниже) и создайте чат по номеру телефона.
+
+Production-сборка:
 
 ```bash
-npm install
-npm run dev      # http://localhost:5173
-npm run build    # production-сборка в dist/
+npm run build     # собирает в папку dist/
+npm run preview   # открывает собранную версию на http://localhost:4173
 ```
+
+Файл `.env` не нужен: все данные инстанса вводятся в интерфейсе.
 
 ## Как пользоваться
 
